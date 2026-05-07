@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mini Notes</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="app">
+      <section class="panel">
+        <div class="heading">
+          <p class="eyebrow">Git practice app</p>
+          <h1>Mini Notes</h1>
+        </div>
+
+        <form id="noteForm" class="composer">
+          <label for="noteInput">メモ</label>
+          <div class="inputRow">
+            <input id="noteInput" type="text" placeholder="例: メインPCで pull する" autocomplete="off">
+            <button type="submit">追加</button>
+          </div>
+        </form>
+
+        <ul id="noteList" class="noteList" aria-live="polite"></ul>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
